@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang tuyển sinh</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: orange;
+        }
+        header img{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            
+        }
+        header h1 {
+            text-align: center;
+        }
+        header h2{
+            text-align: center;   
+        }
+        main table tr th,td{
+            border: solid 1px black;
+            
+            
+        }
+        main{
+            border-collapse: collapse;
+            text-align: table;
+        }
+        main table tr #tieude{
+            background-color:red;
+        }  
+        main table{
+            display: inline;
+            margin-left:auto ;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        } 
+        main h2{
+            text-align: center;
+            font-size: 30px;
+            color: chocolate;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        footer h1,p{
+            text-align: center;
+        }
+        footer form{
+            display:inline-block;
+            margin-left: 500px ;
+            margin-right:500px;
+        }
+        footer form input,select{
+            width: 500px;
+            height: 30px;
+        }
+        footer form button{
+            margin-top: 15px;
+            background-color: blue;
+            color: white;
+            float: right;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./logoDN.png" alt="">
+        <h1>Thông tin tuyển sinh 2023</h1>
+        <h2>Mã trường Đại học Đại Nam: DNU</h2> 
+    </header>
+    <main>
+        <h2>Đối với chương trình đại trà</h2>
+        <table >
+            <tr>
+                <th>TT</th>
+                <th>NGÀNH HỌC</th>
+                <th>MÃ NGÀNH</th>
+                <th>TỔ HỢP XÉT TUYỂN</th>
+                <th>THỜI GIAN ĐÀO TẠO</th>
+                <th>CHỈ TIÊU</th>
+            </tr>
+            <tr>
+                <th id="tieude" colspan="6" >A. KHỐI NGÀNH SỨC KHỎE</th>
+            </tr>
+            <TR>
+                <td>1</td>
+                <td>Y khoa</td>
+                <td>7720101</td>
+                <td>A00 - A01 - B00 - B08</td>
+                <td>6 năm (18 kỳ)</td>
+                <td>380</td>
+            </TR>
+            <tr>
+                <td>2</td>
+                <td>Dược học</td>
+                <td>7720201</td>
+                <td>A00 - A11 - B00 - B08</td>
+                <td>4.5 năm (14 kỳ)</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Điều dưỡng</td>
+                <td>7720301</td>
+                <td>B00  - C14 - D07 - D66</td>
+<td>3.5 năm (11 kỳ)</td>
+                <td>200</td>
+            
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <h1>ĐĂNG KÝ XÉT TUYỂN NGAY HÔM NAY</h1>
+        <p>Đăng ký nhận tư vấn miến phí</p>
+        <form action="">
+            <input type="text" name="fname" value="họ và tên"><br>
+            <label for="birth">Ngày sinh</label><br>
+            <input type="date" name="birth" id="birth"><br>
+            <input type="text" name="phone"><br>
+            <input type="email" name="email"><br>
+            <input type="text" name="address"><br>
+            <label for="select">Chọn ngành muốn học</label>
+            <select name="" id="">
+                <option value=""Y khoa></option>
+                <option value=""CNTT></option>
+                <option value=""Dược></option>
+            </select>
+            
+            <button>hoàn thành đăng ký</button>
+        </form>
+    </footer>
+</body>
+</html>
